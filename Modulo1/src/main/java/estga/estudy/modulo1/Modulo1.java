@@ -15,6 +15,6 @@ public class Modulo1 {
         
         
         
-        System.out.println("O meu nome é " + nome + " tenho " + idade + "anos" + " meco " + altura + " e sou estudante: " + estudante);
+        System.out.println("O meu nome e " + nome + " tenho " + idade + " anos" + " meco " + altura + " e sou estudante: " + estudante);
     }
 }
