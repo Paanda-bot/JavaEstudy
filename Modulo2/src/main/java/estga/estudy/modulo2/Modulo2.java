@@ -10,33 +10,52 @@ public class Modulo2 {
         
         
         while(!opcao.equals("3")){ //assim repete enquanto a opcao nao for igual a 3
-        System.out.println("Escolha uma opção:");
-        System.out.println("1 - Dizer Olá");
-        System.out.println("2 - Mostrar idade");
-        System.out.println("3 - Sair");
+        mostrarMenu();
 
         opcao = sc.nextLine(); // criei apos o break pois estava a ficar confuso
         
         switch (opcao) { //aqui ele usara a opção entei meio confuso pensei em criar uma string e ler do teclado e jogar pta la
         
             case "1":
-                System.out.println("Ola");
+                dizerOla();
                 break;
                 
             case "2":
-                System.out.println("sua idade e: " + idade);
+                mostrarIdade(idade);
                 break;
                 
             case "3":
-                System.out.println("A sair...");
+                quit();
                 break;
             default:
-                System.out.println("Opção invalida");
+                erro();
             
         }
-        }
+            }
         sc.close();
         
         
     }
+    
+    public static void mostrarMenu(){
+        System.out.println("Escolha uma opção:");
+        System.out.println("1 - Dizer Olá");
+        System.out.println("2 - Mostrar idade");
+        System.out.println("3 - Sair");
+    }
+    public static void mostrarIdade(int idade){
+        System.out.println("sua idade e: " + idade);
+    }
+    public static void dizerOla(){
+        System.out.println("Ola");
+    }
+    public static void quit(){
+        System.out.println("A sair...");
+    }
+    public static void erro(){
+        System.out.println("Opção invalida");
+    }
 }
+
+
+
